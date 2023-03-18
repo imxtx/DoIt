@@ -19,10 +19,15 @@
             </div>
             <div class="post-info-license">
                 {{- with $params.license | string -}}
-                    <span>
-                        {{- . | safeHTML -}}
-                    </span>
+                <span>
+                    {{- . | safeHTML -}}
+                </span>
                 {{- end -}}
+            </div>
+            <div class="post-info-share">
+                <span>
+                    {{- partial "plugin/share.html" . -}}
+                </span>
             </div>
         </div>
         <div class="post-info-line">
@@ -64,11 +69,11 @@
                     {{- end -}}
                 {{- end -}}
             </div>
-            <div class="post-info-share">
+            <!-- <div class="post-info-share">
                 <span>
                     {{- partial "plugin/share.html" . -}}
                 </span>
-            </div>
+            </div> -->
         </div>
     </div>
 

@@ -1,6 +1,8 @@
-.categories-card, .author-card, .series-card {
+.categories-card,
+.author-card,
+.series-card {
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -65,6 +67,7 @@
       color: $global-link-hover-color-dark;
     }
   }
+
   [theme=black] & {
     color: $global-link-color-black;
 
@@ -79,9 +82,11 @@
   color: $global-font-secondary-color;
   font-variant-numeric: tabular-nums;
   min-width: fit-content;
+
   [theme=dark] & {
     color: $global-font-secondary-color-dark;
   }
+
   [theme=black] & {
     color: $global-font-secondary-color-black;
   }
